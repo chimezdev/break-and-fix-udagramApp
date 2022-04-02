@@ -2,4 +2,6 @@
 
 Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
 
-You can read the full project overview and the steps how to run it in [this blog post](https://vkontech.com/running-nodejs-microservices-in-kubernetes-using-aws-eks-travis-ci-part-1/).
+You can read the full project overview and the steps how to run it in the following blog posts:
+1. [Running NodeJS Microservices in Kubernetes using AWS EKS & Travis CI – Part 1](https://vkontech.com/running-nodejs-microservices-in-kubernetes-using-aws-eks-travis-ci-part-1/)
+2. [Running NodeJS Microservices in Kubernetes using AWS EKS & Travis CI – Part 2](https://vkontech.com/running-nodejs-microservices-in-kubernetes-using-aws-eks-travis-ci-part-2/)
