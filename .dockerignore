@@ -1,0 +1,4 @@
+k8s/aws-secret.yaml
+k8s/env-secret.yaml
+env-configmap.yaml
+set_env.sh

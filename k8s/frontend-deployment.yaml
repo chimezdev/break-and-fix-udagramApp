@@ -17,7 +17,7 @@ spec:
         api: external
     spec:
       containers:
-      - image: vasilkosturski/udagram-frontend
+      - image: chimezdev/udagram-frontend:latest
         name: frontend
         imagePullPolicy: Always          
         ports:
@@ -30,3 +30,19 @@ spec:
             memory: "1024Mi"
             cpu: "500m"                
       restartPolicy: Always
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    service: frontend
+  name: frontend
+spec:
+  ports:
+    - name: "8100"
+      port: 8100
+      targetPort: 80
+  selector:
+    service: frontend
+  type: LoadBalancer

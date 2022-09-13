@@ -15,7 +15,7 @@ spec:
         service: backend-user
     spec:
       containers:
-        - image: vasilkosturski/udagram-api-user
+        - image: chimezdev/udagram-api-user:latest
           name: backend-user
           imagePullPolicy: Always
           env:
@@ -50,3 +50,18 @@ spec:
                   name: env-secret
                   key: POSTGRES_USERNAME
       restartPolicy: Always
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-user
+  labels:
+    service: backend-user
+spec:
+  ports:
+    - name: "8080"
+      port: 8080
+      targetPort: 8080
+  selector:
+    service: backend-user
