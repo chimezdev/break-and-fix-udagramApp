@@ -7,6 +7,6 @@ data:
   JWT_SECRET: hello
   POSTGRES_DB: chimezdev
   POSTGRES_HOST: chimezdev.cyatmnuenxde.us-east-1.rds.amazonaws.com
-  URL: http://a6bc5ae00df074aa1a07d1367eca9723-1905619639.us-east-1.elb.amazonaws.com:8100  
+  URL: http://a108cbf289cd24a71b88b025c3c9acd0-1779850956.us-east-1.elb.amazonaws.com:8100  
 metadata:
   name: env-config
