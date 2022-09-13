@@ -17,7 +17,7 @@ spec:
         api: external
     spec:
       containers:
-      - image: chimezdev/udagram-frontend:v5
+      - image: chimezdev/udagram-frontend:v3
         name: frontend
         imagePullPolicy: Always          
         ports:
