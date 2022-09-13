@@ -36,6 +36,13 @@ import {V0_FEED_MODELS} from './controllers/v0/model.index';
 
   app.use('/api/v0/', IndexRouter);
 
+  // app.use(function(req, res, next) {
+  //   res.header("Access-Control-Allow-Origin", "YOUR-DOMAIN.TLD"); // update to match the domain you will make the request from
+  //   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  //   next();
+  // });
+  //app.use(function(req, res, next) { res.header("Access-Control-Allow-Origin", "localhost:4200")
+
   // Root URI call
   app.get( '/', async ( req, res ) => {
     res.send( '/api/v0/' );
